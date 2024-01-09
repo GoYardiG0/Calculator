@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.calculator"
+             Title="calculator">
+    <Grid BackgroundColor="Teal" ColumnSpacing="10" RowSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition  />
+            <RowDefinition  />
+            <RowDefinition  />
+            <RowDefinition  />
+            <RowDefinition  />
+            <RowDefinition  />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Border 
+            Grid.Row="0"
+            Grid.ColumnSpan="4" 
+            StrokeThickness="1" 
+            Stroke="Black" >
+        <Label
+            x:Name="result"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            Text=".test"/>
+        </Border>
+        <BoxView Color="Green" Grid.Row="3" Grid.Column="1" />
+        <Label
+            HorizontalOptions="Center"
+            Text=""
+            VerticalOptions="Center" />
+
+    </Grid>
+</ContentPage>
